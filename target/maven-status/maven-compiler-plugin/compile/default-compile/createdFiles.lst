@@ -1,0 +1,4 @@
+Main.class
+bean\Word.class
+DatabaseUtils\SqliteUtils.class
+Service\DictSearchService.class
