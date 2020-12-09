@@ -6,6 +6,22 @@ public class Word {
     String accent;
     String mean_cn;
 
+    public Word(int topic_id, String word, String accent, String mean_cn) {
+        this.topic_id = topic_id;
+        this.word = word;
+        this.accent = accent;
+        this.mean_cn = mean_cn;
+    }
+
+    public Word(String word, String accent, String mean_cn) {
+        this.word = word;
+        this.accent = accent;
+        this.mean_cn = mean_cn;
+    }
+
+    public Word() {
+    }
+
     public int getTopic_id() {
         return topic_id;
     }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="lookup" uuid="e3b040c8-b4b7-4ec8-983c-f374ad9202bd">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\BrokenRain\IdeaProjects\Dictionary_Demo\src\main\resources\lookup.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

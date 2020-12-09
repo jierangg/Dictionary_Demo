@@ -1,0 +1,2 @@
+|	spelling	|	accent	|	mean	|
+| ---- | ---- | ---- |

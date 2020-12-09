@@ -15,8 +15,9 @@ public class Main {
         do {
             str = br.readLine();
             String[] temp1;
-            String delimeter = "\\s+";  // 指定分割字符
-            temp1 = str.split(delimeter); // 分割字符串
+            //String delimiter = "\\s+";
+            String delimiter = ",";  // 指定分割字符
+            temp1 = str.split(delimiter); // 分割字符串
             for(String x :  temp1){
                 printWords(x);
             }
@@ -29,13 +30,12 @@ public class Main {
         try {
             Word word=dictSearchService.searchWord(word_name);
             if (word==null){
-                System.out.println("查询为空");
-                throw new SQLException();
+                throw new SQLException("单词： "+word_name+" 查询为空");
             }
             System.out.print("| "+word.getWord()+" |");
             System.out.print(" "+word.getAccent()+" |");
             System.out.print(" "+word.getMean_cn()+" |\n");
-        }catch (SQLException e){
+        }catch (Exception e){
             e.printStackTrace();
         }
     }
